@@ -60,7 +60,7 @@ namespace Calculator_Winforms
             if (!decimal.TryParse(text, NumberStyles.Number, SpanishCulture, out value) || value < minimum)
             {
                 MessageBox.Show(
-                    $"Introduce un valor vÃ¡lido para {fieldName}. El mÃ­nimo es {minimum.ToString("N2", SpanishCulture)}.",
+                    $"Introduce un valor v\u00E1lido para {fieldName}. El m\u00EDnimo es {minimum.ToString("N2", SpanishCulture)}.",
                     "Datos no vÃ¡lidos",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
