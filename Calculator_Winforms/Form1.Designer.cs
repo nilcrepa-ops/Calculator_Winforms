@@ -33,6 +33,7 @@ namespace Calculator_Winforms
             rbD0 = new RadioButton();
             chkPartner = new CheckBox();
             btnCalculate = new Button();
+            btnOpenBasicCalculator = new Button();
             lblNoIva = new Label();
             txtNoIva = new TextBox();
             lblWithIva = new Label();
@@ -180,6 +181,16 @@ namespace Calculator_Winforms
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculate_Click;
             //
+            // btnOpenBasicCalculator
+            //
+            btnOpenBasicCalculator.Location = new Point(32, 285);
+            btnOpenBasicCalculator.Name = "btnOpenBasicCalculator";
+            btnOpenBasicCalculator.Size = new Size(180, 42);
+            btnOpenBasicCalculator.TabIndex = 4;
+            btnOpenBasicCalculator.Text = "Basic Calculator";
+            btnOpenBasicCalculator.UseVisualStyleBackColor = true;
+            btnOpenBasicCalculator.Click += btnOpenBasicCalculator_Click;
+            //
             // lblNoIva
             //
             lblNoIva.AutoSize = true;
@@ -219,6 +230,7 @@ namespace Calculator_Winforms
             Controls.Add(txtNoIva);
             Controls.Add(lblNoIva);
             Controls.Add(btnCalculate);
+            Controls.Add(btnOpenBasicCalculator);
             Controls.Add(chkPartner);
             Controls.Add(grpDiscount);
             Controls.Add(grpIva);
@@ -255,6 +267,7 @@ namespace Calculator_Winforms
         private RadioButton rbD0;
         private CheckBox chkPartner;
         private Button btnCalculate;
+        private Button btnOpenBasicCalculator;
         private Label lblNoIva;
         private TextBox txtNoIva;
         private Label lblWithIva;

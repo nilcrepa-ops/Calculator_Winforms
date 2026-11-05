@@ -34,6 +34,12 @@ namespace Calculator_Winforms
             UpdateDiscountState();
         }
 
+        private void btnOpenBasicCalculator_Click(object sender, EventArgs e)
+        {
+            using Form2 basicCalculator = new();
+            basicCalculator.ShowDialog(this);
+        }
+
         private void UpdateDiscountState()
         {
             grpDiscount.Enabled = !chkPartner.Checked;
@@ -61,7 +67,7 @@ namespace Calculator_Winforms
             {
                 MessageBox.Show(
                     $"Introduce un valor v\u00E1lido para {fieldName}. El m\u00EDnimo es {minimum.ToString("N2", SpanishCulture)}.",
-                    "Datos no vÃ¡lidos",
+                    "Datos no v\u00E1lidos",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 return false;
